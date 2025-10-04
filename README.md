@@ -5,4 +5,4 @@
   ```2. View all the counties```<br>
   ```> 1``` --- press enter, doing so will select the first option (do this process with all existing options)<br> <br>
 - All input screens are **case-insensitive**
-  You will not need to type the name of the county in lowercase (for example "iasi", "suceava" etc.) despite them being saved like this in the source code since it's **case-insensitive**.
+  You will not need to type the name of the county in lowercase (for example "iasi", "suceava" etc.) despite them being saved like this in the source code.
