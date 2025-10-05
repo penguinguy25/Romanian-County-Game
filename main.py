@@ -68,6 +68,10 @@ def all_counties():
 
 
 
+# FIXME
+# ^^ this is because my idiotic ahh forgot bucuresti as a county :broken_heart: and i cba to fix it now
+
+
 
 
 
@@ -140,7 +144,7 @@ def c_counties_func():
 
 # b counties
 
-b_counties = {"bacau", "bihor", "bistrita-nasaud", "botosani", "brasov", "braila", "buzau"}
+b_counties = {"bacau", "bihor", "bistrita-nasaud", "botosani", "brasov", "braila", "buzau", "bucuresti"}
 
 def b_counties_func():
     game_counties = set()
@@ -154,7 +158,7 @@ def b_counties_func():
         if county.lower() in b_counties and not county.lower() in game_counties:
             game_counties.add(county.lower())
             print(f"County guessed! {len(game_counties)}/{len(b_counties)}")
-            if len(game_counties) == 7:
+            if len(game_counties) == 8:
                 print(f"You have won! All Romanian counties starting with the letter B have been correctly guessed, {len(game_counties)}/{len(b_counties)}!\nHere's a list of all the counties:\n{game_counties}\nBack to the menu . . .\n\n")
                 counties_by_letter()
                 return
