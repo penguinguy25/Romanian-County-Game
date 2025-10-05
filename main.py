@@ -65,9 +65,41 @@ def all_counties():
             print("You have already guessed that county!")
         
 
+
+# FIXME
+# counties by letter minigame
+# b counties
+
+b_counties = {"bacau", "bihor", "bistrita-nasaud", "botosani", "brasov", "braila", "buzau"}
+            
+
+
+# main counties by letter menu
+def counties_by_letter():
+    print("Welcome to Counties by Letter! Currently we will only include the letters that a majority of the counties start with. Select a mode below or type x to exit:\n1. B (8 counties)\n2. C (5 counties)")
+    while True:
+        letter = input("> ")
+        if letter == "x":
+            menu()
+            return
+        elif letter == "1":
+            b_counties()
+            return
+        elif letter == "2":
+            c_counties()
+            return
+        else:
+            print("That's not an available option!")
+
+
+
+
+
+
+
 # main
 def menu():
-    print("\nThis is the Romanian county practice game!\nSelect an option:\n1. Play the all-counties naming game\n2. View all the counties")
+    print("\nThis is the Romanian county practice game!\nSelect an option:\n1. Play the all-counties naming game\n2. View all the counties\n3. Counties by Letter")
     while True:
         mode = input("> ")
         if mode == "1":
@@ -78,10 +110,13 @@ def menu():
             while True:
                 view_option = input("> ")
                 if view_option.lower() == 'x':
-                    print("\nThis is the Romanian county practice game!\nSelect an option:\n1. Play the all-counties naming game\n2. View all the counties")          # lowercased
+                    print("\nThis is the Romanian county practice game!\nSelect an option:\n1. Play the all-counties naming game\n2. View all the counties\n3. Counties by Letter")          # lowercased
                     break
                 else:
                     print("That's not a command!")
+        elif mode == "3":
+            counties_by_letter()
+            return
         else:
             print("That's not an available option!")
         
