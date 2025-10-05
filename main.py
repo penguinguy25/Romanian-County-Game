@@ -66,8 +66,78 @@ def all_counties():
         
 
 
+
+
+
+
+
 # FIXME
 # counties by letter minigame
+
+
+c_counties = {"caras-severin", "calarasi", "cluj", "constanta", "covasna"}
+# c counties
+def c_counties_func():
+    game_counties = set()
+    print("How many counties starting with the letter C can you name (5 in total)? Type f at any point to give up, type s to see currently guessed counties.")
+    while True:
+        print("Guess a county:")
+        county = input("> ")
+
+
+        # if county guess is correct
+        if county.lower() in c_counties and not county.lower() in game_counties:          # lowercased
+            game_counties.add(county.lower())               # lowercased
+            print(f"County guessed! {len(game_counties)}/{len(c_counties)}")
+            if len(game_counties) == 5:
+                print(f"You have won! All Romanian counties starting with the letter C have been correctly guessed, {len(game_counties)}/{len(c_counties)}!\nHere's a list of all the counties:\n{game_counties}\nBack to the menu . . .\n\n")
+                counties_by_letter()
+                return
+
+        # currently guessed counties    
+        elif county.lower() == "s":             # lowercased
+            if len(game_counties) == 0:
+                print(f"No currently guessed counties yet! Type x to exit")
+                while True:
+                    show_exit = input("> ")
+                    if show_exit.lower() == "x":            # lowercased
+                        break
+                    else:
+                        print("That's not a command!")
+            else:
+                print(f"Currently guessed counties:\n{game_counties}\nType x to exit")
+                while True:
+                    show_exit = input("> ")
+                    if show_exit.lower() == "x":            # lowercased
+                        break
+                    else:
+                        print("That's not a command!")
+
+
+        # if the player gives up
+        # press F to pay respects o7
+        elif county.lower() == "f":             # lowercased
+            print(f"You gave up. You guessed {len(game_counties)}/{len(c_counties)} counties.\nHere are the counties you didn't guess:\n{c_counties.difference(game_counties)}\n\n")
+            counties_by_letter()
+            return
+
+        # if the county doesnt exist
+        elif county.lower() not in c_counties:            # lowercased
+            print("That's not a county!")
+
+        
+        # if the county was already guessed (else statement as its hopefully the last case possible)
+        else:
+            print("You have already guessed that county!")
+
+
+
+
+
+
+
+
+
 # b counties
 
 b_counties = {"bacau", "bihor", "bistrita-nasaud", "botosani", "brasov", "braila", "buzau"}
