@@ -1,5 +1,6 @@
 # Romanian County Practice Game
 ## Important details
+- This game also doesn't include Romanian characters such as 'ș' and 'ț' etc. despite being in most official county names, this is because I hate using different keyboard layouts and so do, probably, most of you. You're not really missing much from the normal county name either way, just different pronunciations.
 - To select options from the main menu, type and enter **the number assigned to the option**. For example (options below might change with future updates):<br>
   ```1. Play the all-counties naming game```<br>
   ```2. View all the counties```<br>
