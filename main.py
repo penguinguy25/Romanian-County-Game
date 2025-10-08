@@ -85,12 +85,6 @@ def all_counties():
 
 
 
-
-
-
-
-
-
 # main counties by letter menu
 # counties by letter list
 b_counties = {"bacau", "bihor", "bistrita-nasaud", "botosani", "brasov", "braila", "buzau", "bucuresti"}
@@ -115,7 +109,7 @@ def counties_by_letter():
     # added the print statement to the while loop for smooth func recalling
     # FIXME just in case
     while True:
-        print("Welcome to Counties by Letter! Currently we will only include the letters that a majority of the counties start with. Select a mode below or type x to exit:")
+        print("Welcome to Counties by Letter! Select a mode below or type x to exit:")
         print("1. A (3 counties)   8. M (3 counties)")
         print("2. B (8 counties)   9. N (1 county)")
         print("3. C (5 counties)   10. O (1 county)")
