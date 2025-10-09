@@ -194,6 +194,19 @@ def menu():
         elif mode == "3":
             counties_by_letter()
 
+
+        # new stuff
+        #
+        # haha
+        elif mode == "4":
+            all_states()
+        
+        elif mode == "5":
+            states_by_letter()
+
+        elif mode == "6":
+            view_states()
+
         else:
             print("That's not an available option!")
         

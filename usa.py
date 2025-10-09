@@ -27,6 +27,30 @@ def usa_menu():
 
 
 def all_states():
+    # all main states
+    # yes
+    # what
+    # am
+    # i
+    # doing
+    # with
+    # my
+    # life?
+    usa_states = {"alabama", "alaska", "arizona", "arkansas",
+              "california", "colorado", "connecticut", "delaware",
+              "florida", "georgia", "hawaii", "idaho", "illinois",
+              "indiana", "iowa", "kansas", "kentucky", "louisiana",
+              "maine", "maryland", "massachusetts", "michigan",
+              "minnesota", "mississippi", "missouri", "montana",
+              "nebraska", "nevada", "new hampshire", "new jersey",
+              "new mexico", "new york", "north carolina", "north dakota",
+              "ohio", "oklahoma", "oregon", "pennsylvania", "rhode island",
+              "south carolina", "south dakota", "tennessee", "texas",
+              "utah", "vermont", "virginia", "washington", "west virginia",
+              "wisconsin", "wyoming"}
+
+
+
     game_states = set()
     print("All right, start naming as many states as you can! Type f at any point to give up, type s to see currently guessed states.")
     while True:
@@ -37,7 +61,7 @@ def all_states():
         # if county guess is correct
         if state.lower() in usa_states and not state.lower() in game_states:          # lowercased
             game_states.add(state.lower())               # lowercased
-            print(f"County guessed! {len(game_counties)}/{len(counties)}")
+            print(f"County guessed! {len(game_states)}/{len(usa_states)}")
             if len(game_states) == 50:
                 print(f"You have won! All USA states been correctly guessed, {len(game_states)}/{len(usa_states)}!\nHere's a list of all the states:\n{game_states}\nBack to the main menu . . .\n\n")
                 return
