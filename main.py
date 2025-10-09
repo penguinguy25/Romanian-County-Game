@@ -1,7 +1,12 @@
 # beginning of the romania counties project!
 # this is a practice program which was made because i wanted to learn them lol
 from counties_by_letter import counties_by_letter_func
+
+# stuff
 from usa import usa_menu, all_states
+
+# states by letter
+from states_by_letter import states_by_letter_func
 
 
 counties = {"alba", "arad", "arges", "bacau", "bihor", "bistrita-nasaud", "botosani", "brasov", "braila", "buzau",
@@ -119,6 +124,82 @@ v_counties = {"vaslui", "valcea", "vrancea"}
 
 
 
+
+
+# ........ monstrosity incoming
+a_states = {"alabama", "alaska", "arizona", "arkansas"}
+c_states = {"california", "colorado", "connecticut"}
+d_states = {"delaware"}
+f_states = {"florida"}
+g_states = {"georgia"}
+h_states = {"hawaii"}
+i_states = {"idaho", "illinois", "indiana", "iowa"}
+k_states = {"kansas", "kentucky"}
+l_states = {"louisiana"}
+m_states = {"maine", "maryland", "massachusetts", "michigan", "minnesota", "mississippi", "missouri", "montana"}
+n_states = {"nebraska", "nevada", "new hampshire", "new jersey", "new mexico", "new york", "north carolina", "north dakota"}
+o_states = {"ohio", "oklahoma", "oregon"}
+p_states = {"pennsylvania"}
+r_states = {"rhode island"}
+s_states = {"south carolina", "south dakota"}
+t_states = {"tennessee", "texas"}
+u_states = {"utah"}
+v_states = {"vermont", "virginia"}
+w_states = {"washington", "west virginia", "wisconsin", "wyoming"}
+
+
+
+
+
+def counties_by_letter():
+    # added the print statement to the while loop for smooth func recalling
+    # FIXME just in case
+    while True:
+        print("Welcome to States by Letter! Select a mode below or type x to exit:")
+        print("1. A (3 counties)   8. M (3 counties)")
+        print("2. B (8 counties)   9. N (1 county)")
+        print("3. C (5 counties)   10. O (1 county)")
+        print("4. D (2 counties)   11. P (1 county)")
+        print("5. G (3 counties)   12. S (4 counties)")
+        print("6. H (2 counties)   13. T (3 counties)")
+        print("7. I (3 counties)   14. V (3 counties)")
+        letter = input("> ")
+        if letter == "x":
+            menu()
+            return
+        elif letter == "1":
+            counties_by_letter_func(a_counties, "A")
+        elif letter == "2":
+            counties_by_letter_func(b_counties, "B")
+        elif letter == "3":
+            counties_by_letter_func(c_counties, "C")
+        elif letter == "4":
+            counties_by_letter_func(d_counties, "D")
+        elif letter == "5":
+            counties_by_letter_func(g_counties, "G")
+        elif letter == "6":
+            counties_by_letter_func(h_counties, "H")
+        elif letter == "7":
+            counties_by_letter_func(i_counties, "I")
+        elif letter == "8":
+            counties_by_letter_func(m_counties, "M")
+        elif letter == "9":
+            counties_by_letter_func(n_counties, "N")
+        elif letter == "10":
+            counties_by_letter_func(o_counties, "O")
+        elif letter == "11":
+            counties_by_letter_func(p_counties, "P")
+        elif letter == "12":
+            counties_by_letter_func(s_counties, "S")
+        elif letter == "13":
+            counties_by_letter_func(t_counties, "T")
+        elif letter == "14":
+            counties_by_letter_func(v_counties, "V")
+        else:
+            print("That's not an available option!")
+
+
+
 def counties_by_letter():
     # added the print statement to the while loop for smooth func recalling
     # FIXME just in case
@@ -202,7 +283,7 @@ def menu():
             all_states()
         
         elif mode == "5":
-            states_by_letter()
+            states_by_letter_func()
 
         elif mode == "6":
             view_states()
