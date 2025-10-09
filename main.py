@@ -74,7 +74,7 @@ def all_counties():
 
 
 # FIXME
-# ^^ this is because my idiotic ahh forgot bucuresti as a county :broken_heart: and i cba to fix it now
+# ^^ this is because i am an idiot and i forgot bucuresti as a county :broken_heart: and i cba to fix it now
 
 
 
@@ -183,5 +183,6 @@ def menu():
         else:
             print("That's not an available option!")
         
+
 
 menu()
