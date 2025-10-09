@@ -7,6 +7,30 @@
 # main menu
 # 
 # yeah!!!!!!!!!!!!!!!!!!!!!!!!
+usa_states = {"alabama", "alaska", "arizona", "arkansas",
+              "california", "colorado", "connecticut", "delaware",
+              "florida", "georgia", "hawaii", "idaho", "illinois",
+              "indiana", "iowa", "kansas", "kentucky", "louisiana",
+              "maine", "maryland", "massachusetts", "michigan",
+              "minnesota", "mississippi", "missouri", "montana",
+              "nebraska", "nevada", "new hampshire", "new jersey",
+              "new mexico", "new york", "north carolina", "north dakota",
+              "ohio", "oklahoma", "oregon", "pennsylvania", "rhode island",
+              "south carolina", "south dakota", "tennessee", "texas",
+              "utah", "vermont", "virginia", "washington", "west virginia",
+              "wisconsin", "wyoming"}
+# some function
+def view_states():
+    print(f"Here are all the US states. You can use this list as a pointer to help you memorize them and win the all-states naming game!\n\n{usa_states}\n\nType x to exit")
+    while True:
+        view_option = input("> ")
+        if view_option.lower() == 'x':
+            return
+        else:
+            print("That's not a command!")
+
+
+
 
 def usa_menu(): 
     while True:
@@ -36,18 +60,7 @@ def all_states():
     # with
     # my
     # life?
-    usa_states = {"alabama", "alaska", "arizona", "arkansas",
-              "california", "colorado", "connecticut", "delaware",
-              "florida", "georgia", "hawaii", "idaho", "illinois",
-              "indiana", "iowa", "kansas", "kentucky", "louisiana",
-              "maine", "maryland", "massachusetts", "michigan",
-              "minnesota", "mississippi", "missouri", "montana",
-              "nebraska", "nevada", "new hampshire", "new jersey",
-              "new mexico", "new york", "north carolina", "north dakota",
-              "ohio", "oklahoma", "oregon", "pennsylvania", "rhode island",
-              "south carolina", "south dakota", "tennessee", "texas",
-              "utah", "vermont", "virginia", "washington", "west virginia",
-              "wisconsin", "wyoming"}
+    
 
 
 
