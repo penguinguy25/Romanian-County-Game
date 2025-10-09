@@ -1,7 +1,7 @@
 # beginning of the romania counties project!
 # this is a practice program which was made because i wanted to learn them lol
 from counties_by_letter import counties_by_letter_func
-
+from usa import usa_menu, all_states
 
 
 counties = {"alba", "arad", "arges", "bacau", "bihor", "bistrita-nasaud", "botosani", "brasov", "braila", "buzau",
@@ -9,6 +9,20 @@ counties = {"alba", "arad", "arges", "bacau", "bihor", "bistrita-nasaud", "botos
              "harghita", "hunedoara", "ialomita", "iasi", "ilfov", "maramures", "mehedinti", "mures", "neamt", "olt", "prahova",
              "satu mare", "salaj", "sibiu", "suceava", "teleorman", "timis", "tulcea", "vaslui", "valcea", "vrancea", "bucuresti"}
 
+
+
+usa_states = {"alabama", "alaska", "arizona", "arkansas",
+              "california", "colorado", "connecticut", "delaware",
+              "florida", "georgia", "hawaii", "idaho", "illinois",
+              "indiana", "iowa", "kansas", "kentucky", "louisiana",
+              "maine", "maryland", "massachusetts", "michigan",
+              "minnesota", "mississippi", "missouri", "montana",
+              "nebraska", "nevada", "new hampshire", "new jersey",
+              "new mexico", "new york", "north carolina", "north dakota",
+              "ohio", "oklahoma", "oregon", "pennsylvania", "rhode island",
+              "south carolina", "south dakota", "tennessee", "texas",
+              "utah", "vermont", "virginia", "washington", "west virginia",
+              "wisconsin", "wyoming"}
 
 
 # counties ^^^ (42)
@@ -154,17 +168,17 @@ def counties_by_letter():
 
 
 
-
-
-
-
+# menu
+#
+# ^^^^
+# 
 # main
 def menu():
     # added print to the while true loop for smooth func recalling and stuff
     # FIXME
     # ^^ jst in case
     while True:
-        print("\nThis is the Romanian county practice game!\nSelect an option:\n1. Play the all-counties naming game\n2. View all the counties\n3. Counties by Letter")
+        print("\nThis is the Romanian county practice game!\nSelect an option:\n1. Play the all-counties naming game\n2. View all the counties\n3. Counties by Letter\n4. USA All States\n5. USA States by Letter\n6. View all US States")
         mode = input("> ")
         if mode == "1":
             all_counties()
