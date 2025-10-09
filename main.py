@@ -151,50 +151,65 @@ w_states = {"washington", "west virginia", "wisconsin", "wyoming"}
 
 
 
-def counties_by_letter():
+def states_by_letter():
     # added the print statement to the while loop for smooth func recalling
     # FIXME just in case
     while True:
         print("Welcome to States by Letter! Select a mode below or type x to exit:")
-        print("1. A (3 counties)   8. M (3 counties)")
-        print("2. B (8 counties)   9. N (1 county)")
-        print("3. C (5 counties)   10. O (1 county)")
-        print("4. D (2 counties)   11. P (1 county)")
-        print("5. G (3 counties)   12. S (4 counties)")
-        print("6. H (2 counties)   13. T (3 counties)")
-        print("7. I (3 counties)   14. V (3 counties)")
+        print("1. A (4 states)   8. K (2 states)")
+        print("2. C (3 states)   9. L (1 state)")
+        print("3. D (1 state)   10. M (8 states)")
+        print("4. F (1 state)   11. N (8 states)")
+        print("5. G (1 state)   12. O (3 states)")
+        print("6. H (1 state)   13. P (1 state)")
+        print("7. I (4 states)   14. R (1 state)")
+        print("15. S (2 states)")
+        print("16. T (2 states)")
+        print("17. U (1 state)")
+        print("18. V (2 states)")
+        print("19. W (4 states)")
         letter = input("> ")
         if letter == "x":
             menu()
             return
         elif letter == "1":
-            counties_by_letter_func(a_counties, "A")
+            states_by_letter_func(a_states, "A")
         elif letter == "2":
-            counties_by_letter_func(b_counties, "B")
+            states_by_letter_func(c_states, "C")
         elif letter == "3":
-            counties_by_letter_func(c_counties, "C")
+            states_by_letter_func(d_states, "D")
         elif letter == "4":
-            counties_by_letter_func(d_counties, "D")
+            states_by_letter_func(f_states, "F")
         elif letter == "5":
-            counties_by_letter_func(g_counties, "G")
+            states_by_letter_func(g_states, "G")
         elif letter == "6":
-            counties_by_letter_func(h_counties, "H")
+            states_by_letter_func(h_states, "H")
         elif letter == "7":
-            counties_by_letter_func(i_counties, "I")
+            states_by_letter_func(i_states, "I")
         elif letter == "8":
-            counties_by_letter_func(m_counties, "M")
+            states_by_letter_func(k_states, "K")
         elif letter == "9":
-            counties_by_letter_func(n_counties, "N")
+            states_by_letter_func(l_states, "L")
         elif letter == "10":
-            counties_by_letter_func(o_counties, "O")
+            states_by_letter_func(m_states, "M")
         elif letter == "11":
-            counties_by_letter_func(p_counties, "P")
+            states_by_letter_func(n_states, "N")
         elif letter == "12":
-            counties_by_letter_func(s_counties, "S")
+            states_by_letter_func(o_states, "O")
         elif letter == "13":
-            counties_by_letter_func(t_counties, "T")
+            states_by_letter_func(p_states, "P")
         elif letter == "14":
-            counties_by_letter_func(v_counties, "V")
+            states_by_letter_func(r_states, "R")
+        elif letter == "15":
+            states_by_letter_func(s_states, "S")
+        elif letter == "16":
+            states_by_letter_func(t_states, "T")
+        elif letter == "17":
+            states_by_letter_func(u_states, "U")
+        elif letter == "18":
+            states_by_letter_func(v_states, "V")
+        elif letter == "19":
+            states_by_letter_func(w_states, "W")
         else:
             print("That's not an available option!")
 
@@ -283,7 +298,7 @@ def menu():
             all_states()
         
         elif mode == "5":
-            states_by_letter_func()
+            states_by_letter()
 
         elif mode == "6":
             view_states()
