@@ -1,5 +1,5 @@
 # Romanian County Practice Game
-## Very Important
+## Very Important Detail
 - This game is **not just about Romanian counties**, I have also added **US states** to the game. The name of the repo **will remain Romanian County Game** despite this fact because it's 
 ## More Important Details
 - This game also **doesn't include Romanian characters** such as 'ș' and 'ț' etc. despite being in most official county names, this is because I hate using different keyboard layouts. **You're probably not really missing much** from the normal county name **either way**, **just different pronunciations**.
